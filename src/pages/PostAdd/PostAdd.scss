@@ -1,12 +1,12 @@
 @import '../../styles/variables.scss';
 
-.rootPostEditing {
+.rootPostAdd {
   margin: 0 auto;
   display: flex;
   width: var(--container, 576px);
   flex-direction: column;
 
-  .postEditing {
+  .postAdd {
     margin: 0 auto;
     border-radius: var(--c-radius, 16px);
     border: 1px solid var(--c-border-color, #e5e5e5);
@@ -15,7 +15,7 @@
     padding: 40px 0px;
     align-items: center;
 
-    .postContainer {
+    .postAddContainer {
       display: flex;
       padding: 0px 24px;
       flex-direction: column;
@@ -24,7 +24,7 @@
       flex: 1 0 0;
       align-self: stretch;
 
-      .postPublish {
+      .postAddPublish {
         display: flex;
         padding-bottom: 32px;
         align-items: flex-start;
@@ -32,7 +32,7 @@
         flex: 1 0 0;
         align-self: stretch;
 
-        .profileThumb {
+        .profileAddThumb {
           width: 48px;
           height: 48px;
           flex-shrink: 0;
@@ -40,7 +40,7 @@
           border: solid 1px $grey88;
         }
 
-        .postContent {
+        .postAddContent {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
@@ -48,7 +48,7 @@
           flex: 1 0 0;
           align-self: stretch;
 
-          .postContentName {
+          .postAddContentName {
             color: $black;
             font-size: 20px;
             font-style: normal;
@@ -56,7 +56,7 @@
             line-height: normal;
           }
 
-          .postContentText {
+          .postAddContentText {
             display: flex;
             padding: 15px 270px 617px 16px;
             flex-direction: column;
@@ -70,7 +70,7 @@
         }
       }
 
-      .postAction {
+      .postAddAction {
         display: flex;
         padding-top: 24px;
         justify-content: space-between;
@@ -78,7 +78,7 @@
         align-self: stretch;
         border-top: 1px solid $grey88;
 
-        .buttonLine {
+        .postAddButtonLine {
           display: flex;
           width: 120px;
           height: var(--input-height, 56px);
@@ -90,7 +90,7 @@
           color: $blue;
         }
 
-        .buttonFill {
+        .postAddButtonFill {
           display: flex;
           width: 120px;
           height: var(--input-height, 56px);
