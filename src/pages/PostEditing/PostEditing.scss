@@ -1,0 +1,106 @@
+@import '../../styles/variables.scss';
+
+.rootPostEditing {
+  margin: 0 auto;
+  display: flex;
+  width: var(--container, 576px);
+  flex-direction: column;
+
+  .PostEditing {
+    margin: 0 auto;
+    border-radius: var(--c-radius, 16px);
+    border: 1px solid var(--c-border-color, #e5e5e5);
+    background: var(--white, #fff);
+    height: 878px;
+    padding: 40px 0px;
+    align-items: center;
+
+    .PostContainer {
+      display: flex;
+      padding: 0px 24px;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex: 1 0 0;
+      align-self: stretch;
+
+      .PostPublish {
+        display: flex;
+        padding-bottom: 32px;
+        align-items: flex-start;
+        gap: 24px;
+        flex: 1 0 0;
+        align-self: stretch;
+
+        .ProfileThumb {
+          width: 48px;
+          height: 48px;
+          flex-shrink: 0;
+          border-radius: 48px;
+          border: solid 1px $grey88;
+        }
+
+        .PostContent {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 8px;
+          flex: 1 0 0;
+          align-self: stretch;
+
+          .PostContentName {
+            color: $black;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+
+          .PostContentText {
+            display: flex;
+            padding: 15px 270px 617px 16px;
+            flex-direction: column;
+            align-items: center;
+            flex: 1 0 0;
+            align-self: stretch;
+            border-radius: 6px;
+            border: 1px solid $grey60;
+            background: $white;
+          }
+        }
+      }
+
+      .PostAction {
+        display: flex;
+        padding-top: 24px;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: stretch;
+        border-top: 1px solid $grey88;
+
+        .Button_line {
+          display: flex;
+          width: 120px;
+          height: var(--input-height, 56px);
+          justify-content: center;
+          align-items: center;
+          border-radius: 6px;
+          border: 1px solid $blue;
+          background: $white;
+          color: $blue;
+        }
+
+        .Button_fill {
+          display: flex;
+          width: 120px;
+          height: var(--input-height, 56px);
+          justify-content: center;
+          align-items: center;
+          border-radius: 6px;
+          background: $blue;
+          color: $white;
+        }
+      }
+    }
+  }
+}
