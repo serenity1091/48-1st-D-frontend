@@ -3,18 +3,21 @@
     "email": "jisun@gmail.com",
     "password": "12345!",
     "nickName": "한지선",
-    "phoneNumber": "010-9399-2268"
+    "phoneNumber": "010-9399-2268",
+    "content": "아자아자"
   },
   {
     "email": "mihye@gmail.com",
     "password": "12345!",
     "nickName": "전미혜",
-    "phoneNumber": "010-1234-5678"
+    "phoneNumber": "010-1234-5678",
+    "content": "화이팅"
   },
   {
     "email": "seulki@gmail.com",
     "password": "12345!",
     "nickName": "김슬기",
-    "phoneNumber": "010-1234-5678"
+    "phoneNumber": "010-1234-5678",
+    "content": "kdjkdjkdjkdj"
   }
 ]

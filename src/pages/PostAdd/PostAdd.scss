@@ -1,7 +1,6 @@
 @import '../../styles/variables.scss';
 
-/*다시 상의*/
-#root {
+.rootPostAdd {
   margin: 0 auto;
   padding: 20px 0;
   width: 100%;
@@ -71,23 +70,6 @@
       justify-content: space-between;
       align-items: flex-start;
       border-top: 1px solid $grey88;
-
-      .postAddButtonLine {
-        width: 120px;
-        height: var(--input-height, 56px);
-        border-radius: 6px;
-        border: 1px solid $blue;
-        background: $white;
-        color: $blue;
-      }
-
-      .postAddButtonFill {
-        width: 120px;
-        height: var(--input-height, 56px);
-        border-radius: 6px;
-        background: $blue;
-        color: $white;
-      }
     }
   }
 }
