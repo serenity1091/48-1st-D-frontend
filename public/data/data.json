@@ -1,0 +1,108 @@
+{
+  "data": [
+    {
+      "postId": 1,
+      "userName": "전미혜",
+      "profileImage": "/images/Default-userprofileimage.png",
+      "isMyPost": true,
+      "content": "안뇽하세용💌❣💞💝💘👱‍♀️👩‍🦰👧👨‍🦱👩‍🦲.",
+      "isLiked": false,
+      "likeCount": 8,
+      "commentsCount": 3,
+      "comments": [
+        {
+          "commentId": 1,
+          "userName": "최우식",
+          "comment": "안녕하세요!!.",
+          "isMyReply": false,
+          "createdAt": "2023-08-11T19:26:17Z"
+        },
+        {
+          "commentId": 2,
+          "userName": "안유진",
+          "comment": "미혜님!! 공부좀 하세요.",
+          "isMyReply": false,
+          "createdAt": "2023-06-11T19:26:17Z"
+        },
+        {
+          "commentId": 3,
+          "userName": "전미혜",
+          "comment": "미혜야....힘내힘냉🙂😋",
+          "isMyReply": true,
+          "createdAt": "2023-08-09T19:26:17Z"
+        }
+      ],
+      "createdAt": "2023-08-09T19:26:17Z"
+    },
+
+    {
+      "postId": 2,
+      "userName": "한지선",
+      "profileImage": "/images/Default-userprofileimage.png",
+      "isMyPost": false,
+      "content": "씨스루 굴림만두에 새우를 감싼 [장수손만두]에 다녀왔습니다.인천에선 이미 유명한 만두만집 이더라구요! 외관에서부터 찐맛집을 나타내는데요,벽에는 다양한 상장들과 유명인 사인이 있었어요호두과자 크기만한 기본만두는 4천원이고,새우 한 마리가 통으로 들어있어요 새우굴림5천원입니다! 뿐만 아니라 날치알만두와 찐빵도 팔고있어 메뉴 고르기가 은근 어렵답니다😆",
+      "isLiked": true,
+      "likeCount": 10,
+      "commentsCount": 2,
+      "comments": [
+        {
+          "commentId": 1,
+          "userName": "최우식",
+          "comment": "지선님....최고!",
+          "isMyReply": false,
+          "createdAt": "2023-08-01T19:26:17Z"
+        },
+        {
+          "commentId": 2,
+          "userName": "전미혜",
+          "comment": "D팀 최고최고 ><",
+          "isMyReply": true,
+          "createdAt": "2023-07-10T19:26:17Z"
+        }
+      ],
+      "createdAt": "2023-07-22T10:26:17Z"
+    },
+
+    {
+      "postId": 3,
+      "userName": "김슬기",
+      "profileImage": "/images/Default-userprofileimage.png",
+      "isMyPost": false,
+      "content": "📚고정식 자전거 운동방법과 팁  1️⃣안장 높이 설정  2️⃣손잡이와 자세 설정  3️⃣페달링 속도와 무게 설정  4️⃣페달링 방향 도움되는 정보를 계속 받아보고 싶다면 팔로우🙋‍♂️ 도움이 되셨다면 좋아요 꾹❣️ 헬스하는 지인 태그🏷️ 스토리 공유✈️ 는 저에게 정말 큰 힘이 됩니다🫡 오늘도 소소한 운동 지식 나눠요😎",
+      "isLiked": false,
+      "likeCount": 9,
+      "commentsCount": 4,
+      "comments": [
+        {
+          "commentId": 1,
+          "userName": "전미혜",
+          "comment": "슬기님~~~~~~~~좋은 아침 되세요",
+          "isMyReply": true,
+          "createdAt": "2023-08-15T19:26:17Z"
+        },
+        {
+          "commentId": 2,
+          "userName": "허영생",
+          "comment": "Show me your eyes and give you my love~~난 네가 좋은걸 love you forever",
+          "isMyReply": false,
+          "createdAt": "2023-08-11T19:26:17Z"
+        },
+        {
+          "commentId": 3,
+          "userName": "영웅재중",
+          "comment": "ㅋㅋㅋㅋㅋㅋ아 웃겨!!",
+          "isMyReply": false,
+          "createdAt": "2023-07-25T19:26:17Z"
+        },
+        {
+          "commentId": 4,
+          "userName": "서강준",
+          "comment": "하하호호하하호호",
+          "isMyReply": false,
+          "createdAt": "2023-07-23T19:26:17Z"
+        }
+      ],
+      "createdAt": "2023-07-20T19:26:17Z"
+    }
+  ]
+}

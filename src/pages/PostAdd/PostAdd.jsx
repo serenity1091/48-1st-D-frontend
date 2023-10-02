@@ -4,10 +4,8 @@ import Button from './components/Button';
 import './PostAdd.scss';
 
 const PostAdd = () => {
-  const [usersData, setUsersData] = useState();
-  const [newPost, setNewPost] = useState({
-    content: '',
-  });
+  //const [usersData, setUsersData] = useState();
+  const [newPost, setNewPost] = useState({ content: '' });
 
   const navigate = useNavigate();
 
@@ -18,15 +16,22 @@ const PostAdd = () => {
   };
 
   const postValidation = newPost.content.trim() === '' ? true : false;
-
+  /*
   useEffect(() => {
-    fetch('data/userData.json', { method: 'GET' })
+    fetch('http://10.58.52.111:3000/user/signin', {
+      method: 'GET',
+      headers: {
+        authorization:
+          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImVtYWlsIjoiZW1haWwxMEBnbWFpbC5jb20iLCJpYXQiOjE2OTIzMjUxMTZ9.6ywafXrjDMVZh_VJQzv-CIsjun8prr-CwLuE2c0L-cg',
+        'Content-Type': 'application/json;charset=utf-8',
+      },
+    })
       .then(res => res.json())
       .then(name => {
-        setUsersData(name[2].nickName);
+        setUsersData(name.userName);
       });
   }, []);
-
+*/
   const goToPostList = () => {
     alert('포스트 리스트 페이지로 이동하시겠습니까?');
     navigate('/post-list');
@@ -34,22 +39,24 @@ const PostAdd = () => {
 
   const goToPostDone = () => {
     navigate('/post-done');
-    fetch('data/userData.json', {
-      //method: 'Post',
-      //headers: {
-      //'Content-Type': 'application/json',
-      //},
-      //body: JSON.stringify({
-      //name: nickName,
-      // content: newPost.content,
-    }) //,
-      //})
+    fetch('http://10.58.52.111:3000/thread/upload', {
+      method: 'Post',
+      headers: {
+        authorization:
+          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImVtYWlsIjoiZW1haWwxMEBnbWFpbC5jb20iLCJpYXQiOjE2OTIzMjUxMTZ9.6ywafXrjDMVZh_VJQzv-CIsjun8prr-CwLuE2c0L-cg',
+        'Content-Type': 'application/json;charset=utf-8',
+      },
+      body: JSON.stringify({
+        //userName: usersData.userName,
+        content: newPost.content,
+      }),
+    })
       .then(res => res.json())
       .then(data => {
         console.log(data);
       });
   };
-  console.log(usersData);
+  //console.log(usersData);
 
   return (
     <div className="rootPostAdd">
@@ -63,8 +70,8 @@ const PostAdd = () => {
               alt="프로필 사진"
             />
             <div className="postAddContent">
-              <p className="postAddContentName" id="nickName">
-                {usersData}
+              <p className="postAddContentName" id="userName">
+                Name
               </p>
               <textarea
                 className="postAddContentText"

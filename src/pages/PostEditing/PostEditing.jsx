@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Button from '../PostAdd/components/Button';
 import '../PostEditing/PostEditing.scss';
 
@@ -8,6 +8,9 @@ const PostEditing = () => {
   const [post, setPost] = useState({
     content: '기존 content',
   });
+
+  let { postId } = useParams();
+
   const navigate = useNavigate();
 
   const postInput = event => {
@@ -19,11 +22,11 @@ const PostEditing = () => {
   const postEditingValidation = post.content === setPost.content ? true : false;
 
   useEffect(() => {
-    fetch('data/userData.json', { method: 'GET' })
+    fetch(`http://10.58.52.111:3000/${postId}`, { method: 'GET' })
       .then(res => res.json())
       .then(name => {
-        setUsersData(name[2].nickName);
-        setPost(name[2].content);
+        setUsersData(name.userName);
+        setPost(name.content);
       });
   }, []);
 
@@ -34,16 +37,16 @@ const PostEditing = () => {
 
   const goToPostDone = () => {
     navigate('/post-done');
-    fetch('data/userData.json', {
-      //method: 'Post',
-      //headers: {
-      //'Content-Type': 'application/json',
-      //},
-      //body: JSON.stringify({
-      //name: nickName,
-      // content: post.content,
-    }) //,
-      //})
+    fetch('http://10.58.52.111:3000/thread/(아이디값)', {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        userName: usersData,
+        content: post.content,
+      }),
+    })
       .then(res => res.json())
       .then(data => {
         console.log(data);
@@ -63,7 +66,7 @@ const PostEditing = () => {
             />
             <div className="postContent">
               <p className="postContentName" id="nickName">
-                {usersData}
+                {/*usersData*/}
               </p>
               <textarea
                 className="postContentText"

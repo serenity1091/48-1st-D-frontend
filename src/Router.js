@@ -17,7 +17,7 @@ const Router = () => {
         <Route path="/signup-done" element={<SignUpDone />} />
         <Route path="/post-list" element={<PostList />} />
         <Route path="/post-add" element={<PostAdd />} />
-        <Route path="/post-editing" element={<PostEditing />} />
+        <Route path="/post-editing/:postId" element={<PostEditing />} />
         <Route path="/post-done" element={<PostDone />} />
       </Routes>
     </BrowserRouter>
