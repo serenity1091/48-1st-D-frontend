@@ -16,7 +16,7 @@ const PostAdd = () => {
   };
 
   const postValidation = newPost.content.trim() === '' ? true : false;
-  /*
+  /* 통신 연습
   useEffect(() => {
     fetch('http://10.58.52.111:3000/user/signin', {
       method: 'GET',
