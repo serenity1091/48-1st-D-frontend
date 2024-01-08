@@ -1,5 +1,6 @@
 @import '../../../styles/variables.scss';
 
+/*다시 상의*/
 #root {
   margin: 0 auto;
   padding: 20px 0;
@@ -11,6 +12,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  h1 {
+    visibility: hidden;
+  }
 
   .modalPostDone {
     display: flex;
@@ -31,27 +36,31 @@
       background: $black;
 
       .modalImg {
-        width: 35px;
-        height: 35px;
-        margin: 15px 4px 15px 8px;
+        width: 25px;
+        height: 25px;
+        margin: 23px 4px 15px 14px;
       }
 
       .modalPost {
         float: right;
-        color: $white;
-        font-size: 20px;
-        margin-top: 20px;
+        margin-top: 25px;
 
         .modalContent {
+          color: $white;
           display: inline-block;
-          margin-right: 250px;
+          margin-right: 295px;
+          font-size: 15px;
         }
 
         .goToPostList {
           display: inline-block;
           font-weight: 800;
           line-height: normal;
-          margin-right: 28px;
+          margin-right: 25px;
+          border: 0;
+          color: $white;
+          background-color: transparent;
+          font-size: 15px;
         }
       }
     }

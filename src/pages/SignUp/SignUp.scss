@@ -1,0 +1,94 @@
+.signUp {
+  margin: 0 auto;
+  padding: 0 1.2rem 2rem;
+  width: 100%;
+  max-width: 576px;
+  min-width: 320px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .btnPrev {
+    margin-bottom: 1rem;
+    padding: 0.7em 0;
+    width: 100%;
+    color: #000;
+
+    button {
+      padding: 0 0 0 1.2rem;
+      position: relative;
+      background: none;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1.2rem;
+        height: 1.2rem;
+        background: url(../../assets/images/Back_arrow.png) no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  .inputWrap {
+    width: 100%;
+
+    h2 {
+      margin-bottom: 1.5rem;
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
+
+    .inputBox {
+      margin-bottom: 1.2rem;
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+          display: inline-block;
+          font-size: 0.8rem;
+        }
+
+        span {
+          display: inline-block;
+          color: #ff3636;
+          font-size: 0.6rem;
+        }
+      }
+
+      input {
+        padding: 1em 0.8rem;
+        margin-top: 0.4rem;
+        border: 1px solid #e0e0e0;
+        border-radius: 0.3rem;
+
+        &::placeholder {
+          font-size: 0.8rem;
+          color: #999;
+        }
+      }
+    }
+    .btnSubmit {
+      padding: 1em 0;
+      margin-top: 2.3rem;
+      width: 100%;
+      background: #2d71f7;
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: none;
+      border-radius: 8px;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 @import '../../styles/variables.scss';
 
+/*다시 상의*/
 #root {
   margin: 0 auto;
   padding: 20px 0;
@@ -11,6 +12,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  h1 {
+    visibility: hidden;
+  }
 
   .postAdd {
     width: 100%;
