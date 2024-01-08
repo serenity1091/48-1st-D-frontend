@@ -1,0 +1,45 @@
+.editorBox {
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+
+  width: 100%;
+  height: 95px;
+  max-width: 576px;
+  bottom: 0;
+  flex-direction: column;
+
+  align-items: flex-end;
+  gap: 8px;
+  background: white;
+  color: white;
+  .editorButton {
+    display: flex;
+    width: 120px;
+    height: var(--input-height, 56px);
+    padding: 0px 34px;
+    justify-content: center;
+    align-items: center;
+    border-color: #2d71f7;
+    border-radius: 6px;
+    background: var(--blue, #2d71f7);
+
+    color: var(--white, #fff);
+    text-align: center;
+
+    font-feature-settings:
+      'clig' off,
+      'liga' off;
+
+    font-family: 'Pretendard-Regular';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  .editorButton:hover {
+    background: var(--navy, #083e7f);
+    border-color: #083e7f;
+  }
+}

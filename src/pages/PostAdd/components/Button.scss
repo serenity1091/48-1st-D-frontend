@@ -1,0 +1,36 @@
+@import '../../../styles/variables.scss';
+
+.primary {
+  width: 120px;
+  height: var(--input-height, 56px);
+  border-radius: 6px;
+  background: $blue;
+  color: $white;
+  border: none;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.primary:hover {
+  background: $navy;
+}
+
+.primary:disabled {
+  background: $grey88;
+}
+
+.secondary {
+  width: 120px;
+  height: var(--input-height, 56px);
+  border-radius: 6px;
+  border: 1px solid $blue;
+  background: $white;
+  color: $blue;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.secondary:hover {
+  border-color: $navy;
+  color: $navy;
+}
